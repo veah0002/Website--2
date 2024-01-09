@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  gap: 10px;
+}
+.grid_1-1_galleri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+section {
+  border: 1px cornflowerblue;
+}
+
+@media (min-width: 800px) {
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 1em;
+  }
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+  }
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+  }
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex_col > :last-child {
+    margin-top: auto;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  #op_col {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .code {
+    grid-column: 3 / span 2;
+  }
+  .keyboard {
+    grid-column: 2 / span 3;
+  }
+  .apple {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .grid_1-1_galleri {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+  .order {
+    order: -1;
+  }
+  .pc {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .tablet {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
